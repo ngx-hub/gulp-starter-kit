@@ -4,17 +4,28 @@
   "description": "Gulp 4 Starter Kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build --production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Gulp 4"
   ],
   "author": "Aleksandr Kinash",
   "license": "ISC",
+  "homepage": "https://AleksandrKinash.github.io/gulp-starter-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleksandrKinash/gulp-starter-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AleksandrKinash/gulp-starter-kit/issues"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
+    "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",

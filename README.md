@@ -22,6 +22,7 @@ This should be installed on your computer in order to get up and running:
 
 ## Dependencies
 These [npm](https://www.npmjs.com/) packages are used in the `Gulp Starter Kit`:
+   - [gh-pages](https://www.npmjs.com/package/gh-pages)
    - [browser-sync](https://www.browsersync.io/docs/gulp) / [options](https://www.browsersync.io/docs/options)
    - [del](https://github.com/sindresorhus/del)
    - [gulp](https://github.com/gulpjs/gulp)
@@ -68,6 +69,16 @@ disable: `sourcemaps`
 enable: `imagemin`
 ```bash
 gulp build --prod
+```
+
+### 6. Deploying / Publishing
+The build can automatically deploy the build to the `GitHub Pages` of the current repository. To do this, you need to edit the field, `username` and repository in your `package.json` file.
+```bash
+"homepage": "https://user_name.github.io/repo_name",
+```
+Then in the terminal execute the following command.
+```bash
+npm deploy
 ```
 
 ## Supported CSS preprocessors and the corresponding directory names:

@@ -23,7 +23,7 @@ const uglify =          require(`gulp-uglify`);
 const imagemin =        require(`gulp-imagemin`);
 const browserSync =     require(`browser-sync`).create();
 
-const IS_PROD = process.argv.splice(3).includes(`--prod`);
+const IS_PROD = process.argv.splice(3).includes(`--production`);
 
 const BROWSER_SYNC_CONFIG = {
     server: {
