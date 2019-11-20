@@ -5,6 +5,7 @@
 This Gulp Starter Kit provides a simple way of setting up a modern web development environment. Here is a list of the current features:
  - Copy `HTML` files from `src` to `dist` directory
  - Compile `CSS` preprocessor code (`Sass/SCSS`, `Less`, `Stylus`) to `CSS`
+ - Compiler `Babel` use `@babel/preset-env`
  - Autoprefix and minify `CSS` and put it inside `dist` directory
  - Compress and copy `images` into `dist` directory
  - Copy `assets` into `dist` directory
@@ -32,6 +33,7 @@ These [npm](https://www.npmjs.com/) packages are used in the `Gulp Starter Kit`:
    - [gulp-concat](https://github.com/gulp-community/gulp-concat)
    - [gulp-debug](https://github.com/sindresorhus/gulp-debug)
    - [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
+   - [gulp-babel ](https://github.com/babel/gulp-babel)
    - [gulp-sass](https://github.com/dlmanning/gulp-sass)
    - [gulp-postcss](https://github.com/postcss/gulp-postcss)
    - [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)

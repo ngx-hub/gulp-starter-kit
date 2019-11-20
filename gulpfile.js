@@ -19,6 +19,7 @@ const postcss =         require(`gulp-postcss`);
 const autoprefixer =    require(`autoprefixer`);
 const cssnano =         require(`cssnano`);
 const sourcemaps =      require(`gulp-sourcemaps`);
+const babel =           require('gulp-babel');
 const uglify =          require(`gulp-uglify`);
 const imagemin =        require(`gulp-imagemin`);
 const browserSync =     require(`browser-sync`).create();
@@ -77,6 +78,7 @@ const jsTask = () => {
         .pipe(debug({title: `js: `}))
         .pipe(plumber())
         .pipe(gulpIf(!IS_PROD, sourcemaps.init()))
+            .pipe(babel()) // options used form ".babelrc"
             .pipe(concat(`main.js`))
             .pipe(rename({basename: `main`, suffix: `.min`}))
             .pipe(uglify())
